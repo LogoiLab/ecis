@@ -26,7 +26,9 @@ pub enum Base {
     DECIBEL,
     SIEMENS,
     KATAL,
-    PASCAL
+    PASCAL,
+    BYTE,
+    BIT
 }
 
 pub enum Decimation {
@@ -50,6 +52,7 @@ pub enum Decimation {
 }
 
 pub struct Component {
+    id: u64,
     manufacturer: Option<super::manufacturer::Manufacturer>,
     purchase_date: Option<u64>,
     part_number: String,
@@ -57,6 +60,5 @@ pub struct Component {
     sub_category: Option<super::category::SubCategory>,
     description: Option<String>,
     datasheet: Option<String>,
-    value: Option<i32>,
-    value_unit: Unit
+    values: Option<Vec<(i32, Unit)>>,
 }

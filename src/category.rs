@@ -5,5 +5,6 @@ pub struct Category {
 
 pub struct SubCategory {
     id: u32,
+    name: String,
     sub_of: Category
 }

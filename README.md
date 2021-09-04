@@ -7,6 +7,7 @@
 - [ ] Major distributor support (Mouser, Digi-key, RS, etc.)
 - [ ] Search by categories
 - [ ] Fuzzy search (eg. within design tolerance)
+- [ ] Label printing
 - [ ] Extensible
 
 ### Stretch goals

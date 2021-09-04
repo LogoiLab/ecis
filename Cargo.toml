@@ -4,7 +4,8 @@ version = "0.1.0"
 edition = "2018"
 author = "Chad Baxter <cbax@doslabelectronics.com>"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+barcoders = "1.0.2"
+dotenv = "0.15.0"
 rocket = "0.5.0-rc.1"
+rust-argon2 = "0.8"
