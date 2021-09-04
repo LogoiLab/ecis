@@ -52,6 +52,16 @@ pub enum Decimation {
 
 }
 
+pub struct Mount {
+    id: u32,
+    name: String
+}
+
+pub struct Package {
+    id: u32,
+    pvalue: String
+}
+
 pub struct Component {
     id: u64,
     manufacturer: Option<super::manufacturer::Manufacturer>,
@@ -61,5 +71,7 @@ pub struct Component {
     sub_category: Option<super::category::SubCategory>,
     description: Option<String>,
     datasheet: Option<String>,
-    values: Option<Vec<(i32, Unit)>>,
+    cvalues: Option<Vec<(i32, Unit)>>,
+    mount_style: Option<Mount>,
+    package: Option<Package>
 }

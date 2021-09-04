@@ -1,7 +1,7 @@
 pub struct Area {
     id: u32,
     name: String,
-    location: Option<String>
+    location: Location
 }
 
 pub struct Location {
