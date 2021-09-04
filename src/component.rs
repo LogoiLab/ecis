@@ -28,7 +28,8 @@ pub enum Base {
     KATAL,
     PASCAL,
     BYTE,
-    BIT
+    BIT,
+    SECONDS
 }
 
 pub enum Decimation {
